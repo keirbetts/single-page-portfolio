@@ -1,0 +1,17 @@
+.proj-div{
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+
+.proj-div h1{
+  color: white;
+  font-family: 'Courier New';
+   padding-top: 1rem;
+margin-left: 35rem;
+}
+
+
+@media(max-width: 969px){
+  .proj-div h1{
+    margin-left: 3rem;
+  }
+}

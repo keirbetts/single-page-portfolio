@@ -1,26 +1,80 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+// import { Element } from 'react-scroll'
 import './App.css';
+import Backdrop from './Components/Backdrop.jsx'
+import Sidedrawer from './Components/Sidedrawer.jsx'
+import Toolbar from './Components/Toolbar.jsx'
+import Home from './Components/Home';
+import Projects from './Components/Projects';
+import Techstack from './Components/Techstack';
+import Contact from './Components/Contact';
+import Education from './Components/Education'
+import Footer from './Components/Footer.jsx';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+
+class App extends Component {
+
+  state = {
+    sideDrawerOpen: false
+
+  }
+
+
+
+  drawerToggleClickHandler = () => {
+    this.setState((prevState) => {
+      return { sideDrawerOpen: !prevState.sideDrawerOpen }
+    })
+  }
+
+
+  backdropClickHandler = () => {
+    this.setState({ sideDrawerOpen: false })
+  }
+
+
+
+
+
+
+
+  render() {
+    let backdrop;
+    if (this.state.sideDrawerOpen) {
+      backdrop = <Backdrop click={this.backdropClickHandler} />
+    }
+    return (
+      <div>
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+        <Sidedrawer show={this.state.sideDrawerOpen} />
+        {backdrop}
+        <Home />
+        {/* Projects
+        TechStack
+        About
+        Footer */}
+        <section>
+          {/* <React.Fragment>
+            <Element> */}
+          <Projects />
+          {/* </Element>
+          </React.Fragment> */}
+        </section>
+        <section>
+          <Techstack />
+        </section>
+        <section>
+          <Education />
+        </section>
+        <section>
+          <Contact />
+        </section>
+        <Footer />
+      </div>
+    );
+  }
 }
 
 export default App;

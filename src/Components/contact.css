@@ -1,0 +1,50 @@
+
+.con-con{
+  background: #000033;
+  padding-right: 1rem;
+  font-family: 'Courier New'
+}
+
+.con-con h1{
+ color: whitesmoke;
+ margin-left: 35rem;
+}
+
+.con-tag{
+  font-size: 2rem;
+}
+
+.con-tag2{
+  font-size: 2rem;
+}
+
+.con-tag3{
+  font-size: 2rem;
+}
+
+@media(max-width: 969px){
+  .icon{
+    display:none
+  }
+.con-con h1{
+margin-left: 60px;
+}
+.con-tag{
+margin-left: -100px;
+margin-right: 100px;
+margin-bottom: -15px;
+display: flex;
+justify-content: center;
+}
+.con-tag2{
+  margin-left: -110px;
+}
+.con-tag3{
+  margin-left: -110px;
+}
+
+  .tag{
+    margin-left: -200px;
+    margin-top: -25px;
+  }
+}

@@ -1,0 +1,33 @@
+.title{
+margin-left: 12rem;
+font-family: 'Courier New';
+ padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+
+.tech-con{
+color: black;
+  background: #000033;
+ /* background: linear-gradient(to right, #000000, #434343); */
+font-family: 'Arial';
+margin: auto;
+}
+
+.content{
+  margin-left: 28rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media(max-width: 1069px){
+  .content{
+    margin: 2rem;
+  }
+  .title{
+    margin: auto;
+  }
+}
+
+
+/* potentially make background white and text black for a cleaner look */

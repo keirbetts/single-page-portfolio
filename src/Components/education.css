@@ -1,0 +1,67 @@
+ .con-top{
+background: black; 
+height: auto;
+width: auto;
+} 
+
+.car{
+  background: linear-gradient(to right, #000000, #434343);
+}
+
+.edu{
+margin-bottom: 0px; 
+ color: black; 
+ margin-left: 35rem; 
+font-family: 'Courier New';
+  margin-top: 0px;  
+ padding-top: 1rem;
+ padding-bottom: 1rem;
+
+}
+
+.dates{
+  color: black;
+  font-family: 'Courier New';
+}
+.dates2{
+  color: black;
+  font-family:'Courier New';
+}
+
+
+.info{
+  color:black;
+  font-family: 'Courier New';
+}
+
+.info2{
+   color: black;
+   font-family: 'Courier New';
+}
+
+
+
+@media(max-width: 769px){ 
+  .con-top{
+   margin: 0;
+      padding: 0;
+  } 
+  .con-top h1{
+    margin-top: -230px;
+    margin-bottom: -20px;
+    margin-left: -15px;
+  }
+.dates{
+    margin-top: 0px; 
+   margin-bottom: -50px;
+}
+.info{
+  margin-top: 60px;
+}
+  .dates2{
+     margin-top: -50px;
+  }
+  .info2{
+    margin-top: 0px;
+  }
+} 
